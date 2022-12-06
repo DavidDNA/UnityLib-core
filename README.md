@@ -1,3 +1,5 @@
+![DNA Studios Logo](logo-dna.png)
+
 # UnityLib-core
 A collection of extensions and utilities for daily Unity Engine coding!
 
