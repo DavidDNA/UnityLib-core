@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace UnityLib.Core {
 
-    public static class ArrayExtensions {
+    public static class CollectionExtensions {
 
         /// <summary>
         /// RNG.
