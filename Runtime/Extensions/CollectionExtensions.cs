@@ -25,19 +25,8 @@ namespace UnityLib.Core {
         /// <typeparam name="T">element type</typeparam>
         /// <param name="items">source array</param>
         /// <returns></returns>
-        public static T GetRandomItem<T>(this T[] items) {
-            return items[rand.Next(0, items.Length)];
-        }
-
-        /// <summary>
-        /// Returns a random item from a collection which implements the IList interface.
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="items"></param>
-        /// <returns></returns>
-        public static T GetRandomItem<T>(this IList<T> items) {
-            return items[rand.Next(0, items.Count)];
-        }
+        public static T GetRandomItem<T>(this T[] items) =>
+            items[rand.Next(0, items.Length)];
 
         /// <summary>
         /// Returns a random item from the given IEnumerable.
@@ -45,9 +34,19 @@ namespace UnityLib.Core {
         /// <typeparam name="T">element type</typeparam>
         /// <param name="items">source enumerable</param>
         /// <returns></returns>
-        public static T GetRandomItem<T>(this IEnumerable<T> items) {
-            return items.ElementAt(rand.Next(0, items.Count()));
-        }
+        public static T GetRandomItem<T>(this IEnumerable<T> items) =>
+            items.ElementAt(rand.Next(0, items.Count()));
+
+        /// <summary>
+        /// Returns a random item from the given IList. Uses the
+        /// already computed Count property instead of relying 
+        /// on Linq.
+        /// </summary>
+        /// <typeparam name="T">element type</typeparam>
+        /// <param name="items">source enumerable</param>
+        /// <returns></returns>
+        public static T GetRandomItem<T>(this IList<T> items) =>
+            items[rand.Next(0, items.Count)];
 
         /// <summary>
         /// Returns a shuffled copy of the given source array.
@@ -55,9 +54,8 @@ namespace UnityLib.Core {
         /// <typeparam name="T">element type</typeparam>
         /// <param name="array">source array</param>
         /// <returns></returns>
-        public static T[] Shuffle<T>(this T[] array) {
-            return array.ToList().Shuffle().ToArray();
-        }
+        public static T[] Shuffle<T>(this T[] array) =>
+            array.ToList().Shuffle().ToArray();
 
         /// <summary>
         /// Returns a shuffled copy of the given source IList.
