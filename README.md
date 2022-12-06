@@ -1,6 +1,6 @@
-<div style="text-align: center;">
+<p align="center" width="100%">
 <img src="https://github.com/DavidDNA/UnityLib-core/raw/main/logo-dna.png">
-</div>
+</p>
 
 # UnityLib-core
 
