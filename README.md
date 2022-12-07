@@ -16,3 +16,7 @@ A collection of extensions and utilities for daily Unity Engine coding!
 
 * Get a random item from an array, a IEnumerable or a IList
 * Shuffle an array or a IList
+
+### MinMax structure
+
+* ints and floats

@@ -1,6 +1,6 @@
 {
   "name": "ch.dnastudios.unitylibcore",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "displayName": "UnityLib-core",
   "description": "A collection of extensions and utilities for daily Unity Engine coding!",
   "unity": "2019.1",
