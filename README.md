@@ -25,3 +25,7 @@ A collection of extensions and utilities for daily Unity Engine coding!
 ### MinMax structure
 
 * ints and floats
+
+### Utils
+
+* Game objects (bulk (de)activation)
