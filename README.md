@@ -13,7 +13,7 @@ A collection of extensions and utilities for daily Unity Engine coding!
 * float & int: Between two numbers ]min, max[
 * float & int: Within a range of two numbers [min, max]
 
-### Vector3 extensions
+### Vector extensions
 
 * Clamp functions (Clamp, ClampX, ClampY, ClampZ)
 
