@@ -29,3 +29,7 @@ A collection of extensions and utilities for daily Unity Engine coding!
 ### Utils
 
 * Game objects (bulk (de)activation)
+
+### Timer
+
+A very simple class to easily make timers.
