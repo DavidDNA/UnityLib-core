@@ -29,6 +29,7 @@ A collection of extensions and utilities for daily Unity Engine coding!
 ### Utils
 
 * Game objects (bulk (de)activation)
+* Transforms (clear children)
 
 ### Timer
 
