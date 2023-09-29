@@ -52,6 +52,14 @@ namespace UnityLib.Core {
         }
 
         /// <summary>
+        /// Don't destroy this object when another scene is loaded.
+        /// </summary>
+        public void DontDestroyOnLoad() {
+            DontDestroyOnLoad(gameObject);
+        }
+
+
+        /// <summary>
         /// Removes the object.
         /// </summary>
         public void Remove() {
