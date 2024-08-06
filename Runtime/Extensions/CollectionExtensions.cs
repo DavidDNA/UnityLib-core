@@ -67,8 +67,7 @@ namespace UnityLib.Core {
             IList<T> copy = list.ToList();
             int n = copy.Count;
             while (n > 1) {
-                n--;
-                int k = rand.Next(0, n);
+                int k = rand.Next(n--);
                 T value = copy[k];
                 copy[k] = copy[n];
                 copy[n] = value;
